@@ -52,16 +52,14 @@ header {
     padding-top: 24px;
     padding-bottom: 24px;
 }
-.nav {
+.nav{
     display: flex;
 }
 
-.link {
-   
+.link{
     text-decoration: none;
     color: var(--navy-blue);
-    
- }
+}
  
 .logo{
     font-family:'Raleway',sans-serif;
@@ -73,22 +71,22 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris);
-  }
+}
 
-  nav .list-nav{
+nav .list-nav{
     margin-left: 76px;
 }
 
 .footer-text p{
     margin-top: 16px;
-  }
+}
 
 .studio{
     color: var(--navy-blue);
-  }
+}
 .studio-white {
     color: var(--cloud);
-  }
+}
  
 .address{
     text-decoration: none;
@@ -111,11 +109,12 @@ header {
  .section-hero{
     background-color: var(--navy-blue);
     max-width: 1440px;
+    margin: 0 auto;
     background-image: linear-gradient(
               rgba(46, 47, 66, 0.7),
               rgba(46, 47, 66, 0.7)),
             url(../images/people-office.jpg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 188px 0;
@@ -123,7 +122,7 @@ header {
     
  }
  
- .hero{
+.hero{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -131,7 +130,7 @@ header {
     width: 496px;
   
  }
- .title-hero{
+.title-hero{
       
     font-weight: 700;
     font-size: 56px;
@@ -154,7 +153,10 @@ header {
     background-color: var(--cloud);
     padding-top: 120px; 
     padding-bottom: 120px;
-    margin-bottom: 120px;
+}
+.section-customers{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .section-portfolio{
     padding-top: 96px;
@@ -174,12 +176,9 @@ row-gap: 48px;
     border: 1px solid var(--cornflower);
     border-top: none;
 }
-.item-portfolio:hover,
-.item-portfolio:focus{
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-     0px 1px 1px rgba(46, 47, 66, 0.16), 
-     0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
+
+
 
 .visually-hidden{
     position: absolute;
@@ -196,6 +195,7 @@ row-gap: 48px;
 }
 
 .item-feature-text{
+    margin-top: 8px;
     width: 264px;
 }
 .item-feature-icon{
@@ -204,6 +204,7 @@ row-gap: 48px;
     align-items: center;
     width: 264px;
     height: 112px;
+    border-radius: 4px;
     background-color: var(--cloud);
 }
 .icon-feature-box{
@@ -238,7 +239,7 @@ row-gap: 48px;
     letter-spacing: 0.02em;
     color: var(--slate);
   
-  }
+}
 
 .title-work,
 .title-team,
@@ -286,12 +287,12 @@ row-gap: 48px;
 .list-team-soc{
     justify-content: center;
     margin-top: 8px;
- }
+}
  .item-team{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
- }
+}
 .item-team-soc,
 .item-footer-soc{
     width: 40px;
@@ -311,9 +312,8 @@ row-gap: 48px;
 .link-team-soc:hover,
 .link-team-soc:focus{
     background-color:var(--ocean);
-    
+ 
 }
-
 .list-customers{
     display: flex;
 
@@ -321,13 +321,13 @@ row-gap: 48px;
 .link-customers{
     display: flex;
     width: 168px;
-    height: 68px;
+    height: 88px;
     border: 1px solid var(--solid);
     border-radius: 4px;
     justify-content: center;
     align-items: center;
     fill: var(--solid);
-    
+  
 }
 .link-customers:hover,
 .link-customers:focus{
@@ -342,13 +342,22 @@ row-gap: 48px;
    text-decoration-color: var(--ocean);
    color: var(--ocean);
  }
- .link-portfolio:hover,
- .link-portfolio:focus{
-  text-decoration: none;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-   0px 1px 1px rgba(46, 47, 66, 0.16),
+ 
+ .link-portfolio{
+    display: inline-block;
+    text-decoration: none;
+ }
+ 
+ .link-portfolio:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);  
  }
+ 
+ .link-portfolio:hover,
+ .link-portfolio:focus{
+    text-decoration: underline;
+ }    
 
  .btn-hero {
     padding: 16px 32px;
@@ -400,8 +409,6 @@ row-gap: 48px;
  }
  
 .footer{
-   
-    margin-top: 120px;
     padding: 100px 0 100px 0;
     background-color: var(--navy-blue);
     color: var(--cloud);
@@ -421,6 +428,7 @@ row-gap: 48px;
    letter-spacing: 0.02em;
    justify-content: center;
    margin-top: 16px;
+   gap: 16px;
 }
 .link-footer-soc{
     width: 100%;
